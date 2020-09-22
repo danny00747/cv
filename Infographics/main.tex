@@ -137,7 +137,7 @@
 \definecolor{lgray}{RGB}{0,120,200}
 \definecolor{powderblue}{RGB}{190,220,255}
 \definecolor{darkestblue}{RGB}{0,50,80}
-
+\definecolor{green}{RGB}{60,179,113}
 
 %main color
 \colorlet{maincol}{orange}
@@ -148,6 +148,7 @@
 \colorlet{fourthcol}{darkerblue}
 \colorlet{fifthcol}{lgray}
 \colorlet{sixthcol}{darkblue}
+\colorlet{greencol}{green}
 
 %background color
 \colorlet{bgcol}{powderblue}
@@ -306,15 +307,18 @@
 		\Large{\textcolor{thirdcol}{\textsc{ Web Developer}}}\\
 	}&
 	\parbox{0.25\textwidth}{
-	\icontext{MapMarker}{12}{Brussels, Belgium}\\
-	\icontext{MobilePhone}{12}{+32 476 *** *** **}\\
-    \icontext{Twitter}{12}{@danny}\\
+     \icontext{MapMarker}{12}{\colorbox{maincol}{Brussels, Belgium}}\\
+          \icontext{Mobile}{12}{\colorbox{maincol}{+32 485 713 601}}\\
+    \icontext{GraduationCap}{12}{\colorbox{maincol}{EPHEC LLN }}
 	}&
 	\parbox{0.3\textwidth}{
-	\icontext{MousePointer}{12}{www.daniel.com}\\
-	\icontext{Github}{12}{github.com/danny00747}\\
-	\icontext{At}{12}{olvdanny@protonmail.com}\\
+	\icontext{Globe}{12}{\colorbox{maincol}{Belgian}}\\
+    \icontext{Github}{12}{\colorbox{maincol}{github.com/danny00747}}\\
+    \icontext{At}{12}{\colorbox{maincol}{olvdanny@protonmail.com}}\\
+	
 	}
+   
+    
 \end{tabular*}
 % manage space by reducing font size
 \small
@@ -330,19 +334,20 @@
 
 	\mbox{
 		\parbox[c][3cm][c]{0.29\textwidth}{
-		\textcolor{textcol}{I am a web developer graduate with working experience in research projects as well as in the private sector.}
+		\textcolor{textcol}{i'm a web developer focused on crafting great web experiences. Designing and coding have been my passion since high school.}
 		}
 		\hspace{10pt}
 		\parbox[c][3.9cm][c]{0.32\textwidth}{
 			\begin{center}
-			\factbubble{\medium{\textcolor{sectcol}{\textbf{\begin{center}\includegraphics[width=2cm, height=1.5cm]{ephec.png}\end{center}}}}\\\small{\textcolor{sectcol}{\textbf{}}}}{1}{maincol}{sectcol}{thirdcol}\\
-			\textcolor{textcol}{as latest degree from}\\
-			\textcolor{textcol}{\textbf{EPHEC Louvain-La-Neuve}}
+			\factbubble{\medium{\textcolor{sectcol}{\textbf{\begin{center}\includegraphics[width=2cm, height=1.7cm]{ephec.png}\end{center}}}}\\\small{\textcolor{sectcol}{\textbf{}}}}{1}{maincol}{sectcol}{thirdcol}\\
+			\textcolor{textcol}{To graduate in June 2021}
+            \textcolor{textcol}{from}
+			\textcolor{textcol}{\textbf{EPHEC in IT}}
 			\end{center}
 		}
 		\hspace{10pt}
-		\parbox[c][3cm][c]{0.29\textwidth}{
-		\textcolor{textcol}{And I am always looking for new exciting and interdisciplinary projects worldwide.}
+		\parbox[c][3cm][c]{0.32\textwidth}{
+		\textcolor{textcol}{ But i found myself into web design/development since 2015. I enjoy creating beautifully designed, intuitive and functional websites}
 		}
 	}
 	\vspace{34pt}
@@ -356,22 +361,23 @@
 		
 		% TEXT BOX
 		\parbox[b][150pt][c]{0.35\textwidth}{
-			\textcolor{textcol}{The biggest part I contribute to my work is in the area of software development.}\\
+			\textcolor{textcol}{The biggest part I contribute to my work is in the area of software  \& web development.}\\
 		
 			% LANGUAGES
 			\cvsect{Languages}{0.49}{thirdcol}{textcol}\\[4pt]
-			\icontext{Language}{12}{\colorbox{maincol}{English }}\\
-			\icontext{Language}{12}{\colorbox{maincol}{French }}\\
-            \icontext{Language}{12}{\colorbox{maincol}{Dutch (rudimentary)}}\\
+			\icontext{Language}{12}{English}\\
+            \icontext{Language}{12}{French}\\
+            \icontext{Language}{12}{Dutch (rudimentary)}\\
+           
 		}
-
-		% PIE CHART	
+      
+		% PIE CHART
 		\begin{piechart}{360}{2}{bgcol}{textcol}{sectcol}
-			\slice{5}{Database}{thirdcol}
-			\slice{40}{Backend}{fourthcol}
-			\slice{25}{Frontend}{fifthcol}
+			\slice{10}{Database}{thirdcol}
+			\slice{40}{Back-end}{fourthcol}
+			\slice{25}{Front-end}{fifthcol}
 			\slice{20}{Docker}{secondcol}
-			\slice{10}{Cloud}{maincol}
+			\slice{5}{Cloud}{maincol}
 		\end{piechart}\\
 	}
 	\begin{center}
@@ -383,18 +389,18 @@
 	% BAR CHART
 	\mbox{\hspace{-14pt}
 		\begin{barchart}{10}{5.5}{sectcol}{textcol}{sectcol}{maincol}{secondcol}{thirdcol}
-		    \baritem{50}{Java}{0}{0}{70}
-			\baritem{80}{Javascript}{0}{0}{90}
+		    \baritem{50}{Java/Spring Framework}{0}{0}{70}
+			\baritem{80}{Javascript/Node.js}{0}{0}{90}
             \baritem{80}{C}{0}{0}{65}
-			\baritem{50}{Angluar}{0}{0}{75}
+			\baritem{50}{Angluar/React.js}{0}{0}{70}
 			\baritem{80}{Docker}{0}{0}{70}
-			\baritem{50}{Linux}{0}{0}{80}
-			\baritem{50}{AWS}{0}{0}{40}
+			\baritem{50}{SQL/MongoDB}{0}{0}{65}
+			\baritem{50}{AWS}{0}{0}{25}
 		\end{barchart}
 		\hspace{10pt}
 
 		% TEXTBOX
-		\parbox[b][100pt][c]{0.3\textwidth}{\textcolor{textcol}{Currently, I develop realtime apps with Java and react.\\Formerly I worked with NodeJs and Angular.}}
+		\parbox[b][2.5cm][c]{3.2cm}{\textcolor{textcol}{Currently, I develop real-time apps with the Spring framework and React.js. Formerly i worked with the MEAN stack.}}
 	}
 	\begin{center}
 	\begin{tikzpicture}
@@ -404,7 +410,7 @@
 	\begin{center}
 	\mbox{
 		\parbox[b][2cm][c]{3cm}{
-			\textcolor{textcol}{I am using Git and IntelliJ IDEA regularly for my dev projects.}
+			\textcolor{textcol}{I am using Git, Docker and IntelliJ IDEA regularly for my dev projects.}
 		}\hspace{12pt}
 		\bubbles{6/IntelliJ IDEA, 5/Git, 5/Maven, 4/Docker, 3/NPM}{\cvsection{Technologies}}		
 	}
@@ -418,18 +424,18 @@
 		% FACT BUBBLE
 		\parbox[b][3cm][c]{3cm}{
 			\factbubble{\HUGE{\textcolor{sectcol}{\textbf{{ \begin{center}\includegraphics[width=1cm, height=1cm]{git.png}\end{center}}}}}\\\small{\textcolor{sectcol}{\textbf{}}}}{0.85}{maincol}{sectcol}{thirdcol}\\
-			\textcolor{textcol}{of participation at}\\
-			\textcolor{textcol}{\textbf{Global Game Jam}}
+			\textcolor{textcol}{dev projects are on}\\
+			\textcolor{textcol}{\textbf{my GitHub account}}
 		}
 
 		% TEXT BOX
 		\parbox[b][3cm][c]{4cm}{
-			\textcolor{textcol}{In my freetime I read lots of news and help others on Stackoverflow. Due to bodyweight training I can keep my body and mind in balance.}
+			\textcolor{textcol}{In my free time i read lots books to learn and improve my coding skills and help others on Reddit or Github. Due to body-weight training i can keep my body and mind in balance.}
 		}
 
 		% SQUARE BARS
-		\squares{20/Game Dev,20/Fitness,30/Reddit,20/Stackoverflow}{1}
-	}
+		\squares{20/IT books,20/Fitness,20/Stackoverflow,30/Reddit}{1}
+}
 \end{minipage}
 \begin{minipage}{0.05\textwidth}
 	\begin{center}
@@ -444,60 +450,93 @@
 %----------------------------------------------------------------------------------------
 \cvsect{Experience and Education}{0.4}{thirdcol}{textcol}\\[16pt]
 
-\hspace{60pt}\mbox{\legend{Experience}{1.8cm}{maincol} \legend{Events}{1.1cm}{secondcol} \legend{Education}{1.5cm}{thirdcol}}
+\hspace{48pt}\mbox{
+                \legend{Education}{1.5cm}{thirdcol}
+                \legend{Experience}{1.7cm}{maincol} 
+                \legend{Training}{1.2cm}{greencol} 
+                \legend{Events}{1cm}{secondcol} 
+                
+                }
 \vspace{-40pt}
 \begin{center}
 
 % TIMELINE
-\begin{cvtimeline}{2009}{2018}{20}{\linewidth}
+\begin{cvtimeline}{2016}{2021}{20}{\linewidth}
 
+ \cvevent{9/2020}{9/2021}{EPHEC BAC3 - IT}{}
+    {text a}{thirdcol}{1}
 
+\cvevent{06/2020}{11/2020}{WWDC 2020 Special Event}{}
+   {text a}{secondcol}{1}
+   
+ \cvevent{4/2020}{4/2020}{AWS Developer - Pluralsight}{}
+    {}{greencol}{1}  
 
-\cvevent{1/2009}{11/2011}{Belgian Cloud Summit}{EPHEC}{}{thirdcol}{0}
-
-\cvevent{5/2009}{1/2010}{Semester Abroad}{University of Melbourne}
-    {Mastered six months of study and trans-cultural experience in Melbourne, Australia}{maincol}{1}
-
-\cvevent{6/2010}{11/2011}{Student Assistant}{Uni Bremen}
-    {Realized an online diagnosis platform for workforce literacy development (Flex)}{maincol}{1}
-
-\cvevent{9/2011}{9/2011}{PM Simulation}{Getoq Consulting}
-    {Performed a two-day project simulation from management perspective}{secondcol}{2}
-
-\cvevent{11/2011}{7/2015}{Master Studies Digital Media}{University of Bremen}
-    {Inter-cultural classes in English, covering special topics in computer science and design}
-    {thirdcol}{0}
-
-\cvevent{1/2012}{11/2014}{Scientific Employee}{Uni of Bremen}
-    {Invented a flexible assessment framework, targeting industrial trainees}{maincol}{1}
-
-\cvevent{11/2012}{11/2013}{Master Project - PrIMA}{University of Bremen}
-    {Co-Invented a touch table application for medical support, co-developed software (Java) }
-    {thirdcol}{2}
-
-\cvevent{9/2013}{9/2013}{Poster Presentation}{DELFI Conference}
-    {Co-published poster with paper on usability guidelines for tests with functional illiterates}
-    {secondcol}{2}
-
-\cvevent{11/2014}{9/2016}{IT Consultant}{We4IT GmbH Bremen}
-    {Realize projects in XPages and We4IT Aveedo, monitor project status, conduct reports}
-    {maincol}{1}
-
-\cvevent{7/2015}{7/2015}{M.Sc. Graduation}{University of Bremen}
-    {Master Thesis: Semi Automated Scoring in Technology Based Assessment}{thirdcol}{0}
-
-\cvevent{5/2016}{5/2016}{Startup Weekend}{Uni Bremen}
-    {Performed a two-day project simulation from management perspective}{secondcol}{0}
-
-\cvevent{9/2016}{12/2016}{Software Engineer}{University of Bremen}
+\cvevent{02/2020}{12/2020}{FOSDEM'20}{}
+    {text a}{secondcol}{1}
+    
+ \cvevent{11/2019}{12/2019}{Devoxx Belgium}{}
+    {text a}{secondcol}{0}
+    
+  \cvevent{10/2019}{9/2020}{Cyber Security Challenge}{}
     {text a}{maincol}{1}
     
- \cvevent{02/2017}{02/2017}{FOSDEM}{University of Bremen}
-    {text a}{secondcol}{1}
+ \cvevent{9/2019}{9/2020}{EPHEC BAC2 - IT}{}
+    {text a}{thirdcol}{1}
+   
+  \cvevent{6/2019}{4/2019}{React  - Pluralsight}{}
+    {}{greencol}{1}  
+
+  \cvevent{04/2019}{04/2019}{Drupal Developer Days}{}
+    {text a}{secondcol}{0}
     
-\cvevent{11/2017}{11/2017}{Devoxx Belgium}{University of Bremen}
-    {text a}{secondcol}{1}
-        
+\cvevent{2/2019}{5/2020}{FOSDEM'19}{}
+    {}{secondcol}{0}
+    
+ \cvevent{11/2018}{12/2018}{Java Microservices - Udemy}{}
+    {text a}{greencol}{1}   
+    
+\cvevent{9/2018}{9/2019}{EPHEC BAC1 - IT}{}
+    {text a}{thirdcol}{1}     
+
+\cvevent{4/2018}{4/2018}{OnePlus Crackables 2.0}{}
+    {}{maincol}{1}
+    
+ \cvevent{02/2018}{02/2018}{FOSDEM'18}{}
+    {text a}{secondcol}{1}   
+     
+ \cvevent{11/2017}{11/2017}{Devoxx Belgium}{}
+    {text a}{secondcol}{0}
+   
+ \cvevent{9/2017}{9/2017}{UCL LLN - Computer Science}{}
+    {text a}{thirdcol}{1}
+   
+  \cvevent{6/2018}{6/2018}{Clean Architecture - Pluralsight}{}
+    {}{greencol}{1}  
+    
+ \cvevent{6/2017}{6/2017}{Spring Framework - Pluralsight}{}
+    {}{greencol}{1}
+    
+  \cvevent{1/2018}{1/2018}{Java 9 Modularity - Pluralsight}{}
+    {}{greencol}{1}  
+    
+ \cvevent{02/2017}{02/2017}{FOSDEM'17}{}
+    {text a}{secondcol}{1}      
+    
+\cvevent{1/2017}{1/2017}{Angular  - Pluralsight}{}
+    {}{greencol}{1}
+    
+\cvevent{10/2016}{10/2016}{Java 8 New Features - Udemy}{}
+    {}{greencol}{1}
+    
+    Spring Framework:
+      
+ \cvevent{6/2016}{6/2016}{High school graduation }{}
+    {text a}{thirdcol}{1}   
+    
+\cvevent{2/2016}{2/2016}{Internship at Saint-Luc Clinics}{}
+    {}{maincol}{1}
+
 \end{cvtimeline}
 \end{center}
 \end{minipage}
