@@ -1,3 +1,3 @@
 # cv
 
-Samples of my cv
+Samples of my cv.
